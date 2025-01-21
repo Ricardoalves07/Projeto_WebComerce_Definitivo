@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperação de Senha - ECStore</title>
+    
+    <link rel="shortcut icon" href="../img/EC_Store_icon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/form.css">
+
+    <script src="../js/components/header.js"></script>
+    <script src="../js/components/footer.js"></script>
+</head>
+<body>
+    <header-component></header-component>
+    <main>
+        <section class="forget-password-container">
+            <h2>Recuperação de Senha</h2>
+            
+            <form id="forget-password-form">
+                <input type="password" id="senha1" name="senha1" placeholder="Digite sua nova senha" required>
+
+                <input type="password" id="senha2" name="senha2" placeholder="Confirme a senha" required>              
+    
+                <input type="submit" class="btn-confirm" value="Confirmar">
+            </form>
+        </section>
+    </main>
+    
+    <footer-component></footer-component>
+
+    <script src="../js/validacao.js"></script>
+</body>
+</html>

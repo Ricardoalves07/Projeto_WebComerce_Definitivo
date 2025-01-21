@@ -1,0 +1,78 @@
+header {
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    background-color: #333; 
+    color: white;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 0px 20px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: var(--header-height);
+}
+
+header img {
+    font-size: 24px;
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    max-height: calc(var(--header-height) - 1vh);
+}
+
+header nav ul.menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    
+    background: #333;
+    list-style: none;
+}
+
+header nav ul.menu li {
+    display: inline-block;
+}
+
+header nav ul.menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav ul.menu li a:hover {
+    background: #555;
+    border-radius: 5px;
+}
+
+header form#pesquisa {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    align-items: normal;
+    width: auto;
+}
+
+header form#pesquisa input {
+    width: 100%;
+    border-radius: 5px 0 0 5px;
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+header form#pesquisa button {
+    padding: 10px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    
+    color: white;
+    background-color: #067eff;
+    cursor: pointer;
+}
+
+header form#pesquisa button:hover {
+    background: #0056b3;
+}

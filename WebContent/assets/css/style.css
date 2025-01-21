@@ -1,0 +1,41 @@
+:root {
+    --header-height: 12vh;
+    --footer-height: 11vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f9f9f9;
+    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    margin-top: var(--header-height); /* Compensa a altura do header fixo */
+    min-height: calc(100vh - var(--header-height) - var(--footer-height));
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+main h2 {
+    padding-top: 30px;
+}
+
+h1 {
+    font: Roboto;
+    color: rgb(252, 252, 252);
+}
